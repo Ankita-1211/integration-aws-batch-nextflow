@@ -181,7 +181,8 @@ It creates the nextflow executable file in the current directory. You may want t
 ### Running the test pipeline
 
 ```
-nextflow run -c nextflow.config --input_dir s3://testing-nf-integration/input/ --output_dir s3://testing-nf-integration/output/
+nextflow run https://github.com/Ankita-1211/integration-aws-batch-nextflow.git -c nextflow.config --input_dir s3://testing-nf-integration/input/ --output_dir s3://testing-nf-integration/output/
 
 ```
+Note: the aws credentials need to be added to the nextflow.config file.
 
