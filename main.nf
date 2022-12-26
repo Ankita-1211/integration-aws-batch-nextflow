@@ -1,3 +1,6 @@
+
+nextflow.enable.dsl=2
+
 include { FASTQC } from './modules/fastqc.nf' 
 include { MULTIQC } from './modules/multiqc.nf' 
 
