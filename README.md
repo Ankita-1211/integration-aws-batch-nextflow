@@ -3,6 +3,7 @@
 Amazon Web Services Batch is a service that allows users to submit jobs to job queues, specifying the application to run and the compute resources required by the job. AWS Batch can be configured to run Nextflow processes in specified computing environments, lowering the cost of cloud resources when used in conjunction with Nextflow.
 
 ![](https://github.com/Ankita-1211/integration-aws-batch-nextflow/blob/main/nf-aws-batch.png)
+![image info](./nf-aws-batch.png)
 
 
 #### Basic Requirements
