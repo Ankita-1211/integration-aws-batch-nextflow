@@ -99,7 +99,7 @@ aws-cli/1.16.121 Python/3.7.1 Linux/4.14.94-73.73.amzn1.x86_64 botocore/1.12.111
 ```
 ### 2.5: Save your AMI
 
-Now you can go back to your EC2 instance dashboard and save your AMI by right clicking and going for Image->Create Image.
+Now you can go back to your EC2 instance dashboard and save your AMI by right clicking and going for Image -> Create Image.
 
 **Note: Don’t forget to terminate your running EC2 instance from which you created the AMI to get prevent any running EBS and EC2 costs.**
 
@@ -136,7 +136,7 @@ Next we need to create a queue where Nextflow can submit jobs to the compute env
 
 Enter the name of the queue (this will be needed later in nextflow) and give it a priority. A priority of 1 means that jobs submitted to the compute environment via this queue will have priority over jobs submitted via a queue with a lower priority. This does not matter if you only have 1 queue using the compute environment but if you have multiple queues you can define their priorities. Finally in the dropdown box select the compute environment we created in the previous section and click Create job queue.
 
-### Step 5: Setting up an S3 Bucket for data access
+### Step 5: Setting up a S3 Bucket for data access
 
 Nextflow can use S3 buckets to store and access data. Go to the S3 service under the AWS management console and select Create bucket. Name the bucket (will be used in the nextflow configuration) and select the appropriate region where you have configured everything else and select Create bucket.
 
