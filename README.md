@@ -94,8 +94,9 @@ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -f -p $HOME/miniconda
 $HOME/miniconda/bin/conda install -c conda-forge -y awscli
 rm Miniconda3-latest-Linux-x86_64.sh
+# Test the installation
 ./miniconda/bin/aws --version
-aws-cli/1.16.121 Python/3.7.1 Linux/4.14.94-73.73.amzn1.x86_64 botocore/1.12.111
+aws-cli/1.27.37 Python/3.10.8 Linux/4.14.296-222.539.amzn2.x86_64 botocore/1.29.37
 ```
 ### 2.5: Save your AMI
 
