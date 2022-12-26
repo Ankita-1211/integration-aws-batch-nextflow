@@ -1,8 +1,14 @@
-
 nextflow.enable.dsl=2
 
 include { FASTQC } from './modules/fastqc.nf' 
 include { MULTIQC } from './modules/multiqc.nf' 
+
+
+// this prevents a warning of undefined parameter
+params.help             = false
+params.input_dir        = ''
+params.output_dir       = ''
+
 
 // this prints the input parameters
 log.info """
@@ -15,7 +21,7 @@ log.info """
 // this prints the help in case you use --help parameter in the command line and it stops the pipeline
 
 if (params.help) {
-    log.info 'This is BASIC FASTQ FILE QC Pipeline'
+    log.info 'This is BASIC FASTQ FILE QC Pipeline\n'
     log.info 'Please define input_reads_path and output_dir!\n'
     log.info '\n'
     exit 1
