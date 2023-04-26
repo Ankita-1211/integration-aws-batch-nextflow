@@ -113,7 +113,7 @@ First, we want to create a new compute environment upon which we can base job qu
 
 ### Naming, roles and permissions
 
-First, we want to have a managed environment, so AWS Batch can do configuration and scaling for us. Now, we can name our compute environment. I chose to create first a workload compute environment, thus naming it salmonWorkload. Then we simply select the service and instance roles as well as keypairs we created earlier in the prerequisite section, there should be only one option to choose from.
+First, we want to have a managed environment, so AWS Batch can do configuration and scaling for us. Now, we can name our compute environment. Then we simply select the service and instance roles as well as keypairs we created earlier in the prerequisite section, there should be only one option to choose from.
 
 - Compute Environment
 - Log in to AWS Batch
